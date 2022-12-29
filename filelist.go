@@ -73,10 +73,10 @@ func PopulateFiles(
 	// evaulate path input
 	fileInfo, err := os.Stat(pathin)
 	if err != nil {
-		fmt.Printf("ERROR: Path %q does not exist.", pathin)
+		fmt.Printf("ERROR: Path %q does not exist.\n", pathin)
 		panic(err)
 	} else {
-		fmt.Printf("Path %q is valid.", pathin)
+		fmt.Printf("Path %q is valid.\n", pathin)
 	}
 
 	// check if input path is a file or directory
